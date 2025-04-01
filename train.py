@@ -40,9 +40,9 @@ def train(section_id, experiment, data_type, save_model_path, path1):
     dataloader_loader = DataLoader(transformed_dataset, batch_size=batch_size, shuffle=True, num_workers=0,
                                    drop_last=False)
     if section_id in ['A1', 'B1', 'C1', "D1", "E1", "F1", "G1", "H1"]:
-        model = HistoSGE(in_features=1024, n_genes=785, depth=1, heads=4, dropout=0.)
+        model = HisHRST(in_features=1024, n_genes=785, depth=1, heads=4, dropout=0.)
     else:
-        model = HistoSGE(in_features=1024, n_genes=1000, depth=1, heads=4, dropout=0.)
+        model = HisHRST(in_features=1024, n_genes=1000, depth=1, heads=4, dropout=0.)
     model.train()
     model = model.to(device)
     model_optim = optim.Adam(model.parameters(), lr=learning_rate)
