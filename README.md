@@ -13,7 +13,7 @@ structure of gene expression. Furthermore, this method facilitates the identific
 thereby advancing the understanding of key biological processe.
 
 
-## Overview of SpaDiT
+## Overview of HRST
 
 ![](model/model.png)
 
