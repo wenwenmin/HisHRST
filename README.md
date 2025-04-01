@@ -11,3 +11,38 @@ performance with five existing methods. Experimental results demonstrate that Hi
 expression profiles for unmeasured spots, refine gene expression patterns, and effectively preserve the original spatial
 structure of gene expression. Furthermore, this method facilitates the identification of biologically meaningful pathways,
 thereby advancing the understanding of key biological processe.
+
+
+## Overview of SpaDiT
+
+![](model/model.png)
+
+## Setup
+
+```
+pip install -r requirement.txt
+```
+## Data
+All the datasets used in this paper can be downloaded from url：https://zenodo.org/records/12792074
+
+
+## Running Experiments
+
+To train the neural network, use the following command:
+
+```
+python train.py
+```
+
+To evaluate the model, run:
+
+```
+python test.py
+
+```
+
+
+
+## Contact details
+
+If you have any questions, please contact zhicengshi@stu.ynu.edu.com and wenwen.min@qq.com
