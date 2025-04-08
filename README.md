@@ -18,10 +18,10 @@ thereby advancing the understanding of key biological processe.
 ![](model.png)
 
 ## Setup
-
 ```
 pip install -r requirement.txt
 ```
+
 ## Data
 All the datasets used in this paper can be downloaded from url：https://zenodo.org/records/12792074
 
@@ -38,10 +38,7 @@ To evaluate the model, run:
 
 ```
 python test.py
-
 ```
-
-
 
 ## Contact details
 
