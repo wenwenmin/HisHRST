@@ -32,7 +32,7 @@ In our multimodal feature mapping extractor, the ViT architecture utilizes a sel
 
 This project supports training and evaluation on the DLPFC spatial transcriptomics dataset using PyTorch.
 
-To train the neural network, use the following command:
+To train the model across all 12 tissue sections from the DLPFC dataset, simply run:
 
 ```
 python train.py
@@ -46,6 +46,14 @@ python test.py
 This script loads the model output (e.g., recovered_data.h5ad) and compares it with the original expression profile using metrics like:
 
 Pearson Correlation Coefficient (PCC)  Mean Squared Error (MSE)  Mean Absolute Error (MAE)
+
+# Customizing the Dataset
+The dataset sections used during training and testing are defined by the section_list variable in the scripts:
+```
+section_list = ["151507", "151508", "151509", "151510", "151669", "151670", 
+                "151671", "151672", "151673", "151674", "151675", "151676"]
+```
+To run the model on a different subset or a custom dataset, modify this list accordingly in train.py and test.py
 
 ## Contact details
 
