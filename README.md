@@ -47,7 +47,7 @@ This script loads the model output (e.g., recovered_data.h5ad) and compares it w
 
 Pearson Correlation Coefficient (PCC)  Mean Squared Error (MSE)  Mean Absolute Error (MAE)
 
-# Customizing the Dataset
+### Customizing the Dataset
 The dataset sections used during training and testing are defined by the section_list variable in the scripts:
 ```
 section_list = ["151507", "151508", "151509", "151510", "151669", "151670", 
