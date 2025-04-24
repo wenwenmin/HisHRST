@@ -18,7 +18,7 @@ if dataset == "T1":
         # section_id = "151507"
         tag = f'T1_id_{section_id}'
         path1 = f'./T1_HistoGene/{section_id}/file_tmp'
-        dataset_path = f'D:\dataset\DLPFC/{section_id}'
+        dataset_path = f'..\dataset\DLPFC/{section_id}'
         dataset = ViT_SKIN(dataset="T1", dataset_path=dataset_path, path1=path1, train=True, section_id=section_id)
         train_loader = DataLoader(dataset, batch_size=1, shuffle=True)
 
@@ -44,7 +44,7 @@ elif dataset == 'T2':
     # section_id = "151507"
     tag = f'T2_Mouse_brain'
     path1 = f'./T2_HistoGene/Mouse_brain/file_tmp'
-    dataset_path = f'D:\dataset\T2'
+    dataset_path = f'..\dataset\T2'
     dataset = ViT_SKIN(dataset="T2", dataset_path=dataset_path, path1=path1, train=True, section_id=None)
     train_loader = DataLoader(dataset, batch_size=1, shuffle=True)
 
@@ -100,7 +100,7 @@ elif dataset == 'B1':
     device = torch.device('cuda')
     adata_pred, adata_truth = model_predict(model, test_loader, device=device)
 
-    use_gene = np.load('D:\dataset\Her2st\data/her_hvg_cut_1000.npy', allow_pickle=True)
+    use_gene = np.load('..\dataset\Her2st\data/her_hvg_cut_1000.npy', allow_pickle=True)
     adata_pred.var.index = use_gene
     adata_pred.obs = adata_truth.obs
     adata_pred.write_h5ad(path1 + '/recovered_data.h5ad')
