@@ -25,20 +25,27 @@ pip install -r requirement.txt
 ## Data
 All the datasets used in this paper can be downloaded from url：https://zenodo.org/records/12792074
 
+## Getting access
+In our multimodal feature mapping extractor, the ViT architecture utilizes a self-pretrained model called UNI. You need to request access to the model weights from the Huggingface model page at:[https://huggingface.co/mahmoodlab/UNI](https://huggingface.co/mahmoodlab/UNI). It is worth noting that you need to apply for access to UNI login and replace it in the [demo.ipynb](demo.ipynb).
 
 ## Running Experiments
+
+This project supports training and evaluation on the DLPFC spatial transcriptomics dataset using PyTorch.
 
 To train the neural network, use the following command:
 
 ```
 python train.py
 ```
-
-To evaluate the model, run:
+To evaluate the trained model on a test section:
 
 ```
 python test.py
 ```
+
+This script loads the model output (e.g., recovered_data.h5ad) and compares it with the original expression profile using metrics like:
+
+Pearson Correlation Coefficient (PCC)  Mean Squared Error (MSE)  Mean Absolute Error (MAE)
 
 ## Contact details
 
