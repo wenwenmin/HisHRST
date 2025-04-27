@@ -15,7 +15,7 @@ thereby advancing the understanding of key biological processe.
 
 ## Overview of HRST
 
-![](model.png)
+![](models.png)
 
 ## Setup
 ```
