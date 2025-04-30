@@ -4,7 +4,7 @@ Spatial transcriptomics (ST) is a revolutionary technology that combines spatial
 
 ## Overview of HRST
 
-![HisHRST](Fig_1.png)
+![Fig_1.png](Fig_1.png)
 
 The network architecture of HisHRST. (A) A) HisHRST extracts image features using UNI \cite{UNI}, a general-purpose foundation model pre-trained on large-scale WSI datasets for computational pathology. It then integrates spatial coordinates through a Transformer and projects the fused representations into the gene expression space to generate high-density spatial gene expression profiles. (B) Perform downstream
 analysis.
