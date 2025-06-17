@@ -17,7 +17,7 @@ pip install -r requirement.txt
 ```
 
 ## Data
-All the datasets used in this paper can be downloaded from url：https://zenodo.org/records/12792074
+All the datasets used in this paper can be downloaded from url：[https://zenodo.org/records/12792074](https://zenodo.org/records/15129356)
 
 ## Getting access
 In our multimodal feature mapping extractor, the ViT architecture utilizes a self-pretrained model called UNI. You need to request access to the model weights from the Huggingface model page at:[https://huggingface.co/mahmoodlab/UNI](https://huggingface.co/mahmoodlab/UNI). It is worth noting that you need to apply for access to UNI login and replace it in the [demo.ipynb](demo.ipynb).
